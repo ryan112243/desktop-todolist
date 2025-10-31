@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>桌面待辦清單</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>待辦清單</h1>
+      </header>
+
+      <section class="form">
+        <input id="titleInput" type="text" placeholder="輸入待辦事項..." />
+        <input id="dateInput" type="date" />
+        <button id="addBtn" class="primary">加入</button>
+      </section>
+
+      <section class="controls">
+        <label class="checkbox">
+          <input id="showCompleted" type="checkbox" checked />
+          顯示已完成
+        </label>
+        <select id="sortSelect">
+          <option value="dueAsc">到期日（近→遠）</option>
+          <option value="dueDesc">到期日（遠→近）</option>
+        </select>
+      </section>
+
+      <section id="list" class="list"></section>
+
+      <footer class="footer">
+        <span>© 2025 版權所有</span>
+      </footer>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+  </html>
