@@ -9,7 +9,17 @@
   <body>
     <div class="app">
       <header class="header">
-        <h1>待辦清單</h1>
+        <h1 id="headerTitle">待辦清單</h1>
+        <select id="langSelect" class="lang-select" aria-label="language">
+          <option value="zh-Hant">繁體</option>
+          <option value="zh-Hans">简体</option>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="ru">Русский</option>
+        </select>
       </header>
 
       <section class="form">
@@ -21,18 +31,18 @@
       <section class="controls">
         <label class="checkbox">
           <input id="showCompleted" type="checkbox" checked />
-          顯示已完成
+          <span id="showCompletedLabel">顯示已完成</span>
         </label>
         <select id="sortSelect">
-          <option value="dueAsc">到期日（近→遠）</option>
-          <option value="dueDesc">到期日（遠→近）</option>
+          <option id="optDueAsc" value="dueAsc">到期日（近→遠）</option>
+          <option id="optDueDesc" value="dueDesc">到期日（遠→近）</option>
         </select>
       </section>
 
       <section id="list" class="list"></section>
 
       <footer class="footer">
-        <span>© 2025 版權所有</span>
+        <span id="footerText">© 2025 版權所有</span>
       </footer>
     </div>
 
