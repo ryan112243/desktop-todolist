@@ -12,12 +12,14 @@
       overdue_days: '逾期 {n} 天',
       due_today: '今天到期',
       days_left: '剩 {n} 天',
+      weeks_left: '剩 {n} 週',
       due_date_label: '到期日：{date}',
       mark_complete: '標記完成',
       mark_incomplete: '標記未完成',
       edit_due: '改到期日',
       prompt_edit_due: '請輸入新到期日（YYYY-MM-DD，年份需四位），留空清除：',
       alert_date_format: '請輸入正確格式：YYYY-MM-DD（年份四位數）',
+      no_due_option: '不限期',
       delete: '刪除',
       footer_copyright: '© 2025 版權所有',
     },
@@ -32,12 +34,14 @@
       overdue_days: 'Overdue {n} days',
       due_today: 'Due today',
       days_left: '{n} days left',
+      weeks_left: '{n} weeks left',
       due_date_label: 'Due date: {date}',
       mark_complete: 'Mark complete',
       mark_incomplete: 'Mark incomplete',
       edit_due: 'Edit due date',
       prompt_edit_due: 'Enter new due date (YYYY-MM-DD, 4-digit year). Leave blank to clear:',
       alert_date_format: 'Please enter correct format: YYYY-MM-DD (4-digit year)',
+      no_due_option: 'No due date',
       delete: 'Delete',
       footer_copyright: '© 2025 All rights reserved',
     },
@@ -52,12 +56,14 @@
       overdue_days: '{n}日遅延',
       due_today: '本日が期限',
       days_left: '残り{n}日',
+      weeks_left: '残り{n}週',
       due_date_label: '期限：{date}',
       mark_complete: '完了にする',
       mark_incomplete: '未完了にする',
       edit_due: '期限を変更',
       prompt_edit_due: '新しい期限を入力（YYYY-MM-DD、年は4桁）。空欄でクリア：',
       alert_date_format: '正しい形式で入力してください：YYYY-MM-DD（年は4桁）',
+      no_due_option: '期限なし',
       delete: '削除',
       footer_copyright: '© 2025 著作権所有',
     },
@@ -72,12 +78,14 @@
       overdue_days: '{n}일 지연',
       due_today: '오늘 마감',
       days_left: '남은 {n}일',
+      weeks_left: '남은 {n}주',
       due_date_label: '마감일: {date}',
       mark_complete: '완료로 표시',
       mark_incomplete: '미완료로 표시',
       edit_due: '마감일 변경',
       prompt_edit_due: '새 마감일을 입력하세요 (YYYY-MM-DD, 연도 4자리). 비우면 삭제:',
       alert_date_format: '올바른 형식을 입력하세요: YYYY-MM-DD (연도 4자리)',
+      no_due_option: '마감일 없음',
       delete: '삭제',
       footer_copyright: '© 2025 판권 소유',
     },
@@ -92,12 +100,14 @@
       overdue_days: '逾期 {n} 天',
       due_today: '今天到期',
       days_left: '剩余 {n} 天',
+      weeks_left: '剩余 {n} 周',
       due_date_label: '到期日：{date}',
       mark_complete: '标记完成',
       mark_incomplete: '标记未完成',
       edit_due: '修改到期日',
       prompt_edit_due: '请输入新到期日（YYYY-MM-DD，年份需四位），留空清除：',
       alert_date_format: '请输入正确格式：YYYY-MM-DD（年份四位数）',
+      no_due_option: '不限期',
       delete: '删除',
       footer_copyright: '© 2025 版权所有',
     },
@@ -112,12 +122,14 @@
       overdue_days: '{n} jours de retard',
       due_today: 'Échéance aujourd’hui',
       days_left: 'Il reste {n} jours',
+      weeks_left: 'Il reste {n} semaines',
       due_date_label: 'Échéance : {date}',
       mark_complete: 'Marquer terminé',
       mark_incomplete: 'Marquer non terminé',
       edit_due: 'Modifier l’échéance',
       prompt_edit_due: 'Entrez la nouvelle date (YYYY-MM-DD, année 4 chiffres). Vide pour effacer :',
       alert_date_format: 'Veuillez saisir le format correct : YYYY-MM-DD (année 4 chiffres)',
+      no_due_option: 'Sans échéance',
       delete: 'Supprimer',
       footer_copyright: '© 2025 Tous droits réservés',
     },
@@ -132,12 +144,14 @@
       overdue_days: '{n} Tage überfällig',
       due_today: 'Heute fällig',
       days_left: 'Noch {n} Tage',
+      weeks_left: 'Noch {n} Wochen',
       due_date_label: 'Fällig am: {date}',
       mark_complete: 'Als erledigt markieren',
       mark_incomplete: 'Als unerledigt markieren',
       edit_due: 'Fälligkeitsdatum ändern',
       prompt_edit_due: 'Neues Datum eingeben (YYYY-MM-DD, Jahr 4-stellig). Leer zum Löschen:',
       alert_date_format: 'Bitte korrektes Format eingeben: YYYY-MM-DD (Jahr 4-stellig)',
+      no_due_option: 'Kein Fälligkeitsdatum',
       delete: 'Löschen',
       footer_copyright: '© 2025 Alle Rechte vorbehalten',
     },
@@ -152,12 +166,14 @@
       overdue_days: 'Просрочено на {n} дн.',
       due_today: 'Срок сегодня',
       days_left: 'Осталось {n} дн.',
+      weeks_left: 'Осталось {n} нед.',
       due_date_label: 'Срок: {date}',
       mark_complete: 'Отметить выполнено',
       mark_incomplete: 'Отметить невыполнено',
       edit_due: 'Изменить срок',
       prompt_edit_due: 'Введите новую дату (YYYY-MM-DD, год из 4 цифр). Пусто — очистить:',
       alert_date_format: 'Введите верный формат: YYYY-MM-DD (год из 4 цифр)',
+      no_due_option: 'Без срока',
       delete: 'Удалить',
       footer_copyright: '© 2025 Все права защищены',
     },
@@ -193,6 +209,18 @@
   const optDueDesc = document.getElementById('optDueDesc');
   const footerText = document.getElementById('footerText');
   const langSelect = document.getElementById('langSelect');
+  const noDueInput = document.getElementById('noDueInput');
+  const noDueLabel = document.getElementById('noDueLabel');
+  // Modal elements for editing due date
+  const dueModal = document.getElementById('dueModal');
+  const dueModalTitle = document.getElementById('dueModalTitle');
+  const dueModalLabel = document.getElementById('dueModalLabel');
+  const dueModalInput = document.getElementById('dueModalInput');
+  const dueModalCancel = document.getElementById('dueModalCancel');
+  const dueModalConfirm = document.getElementById('dueModalConfirm');
+  const dueModalNoDue = document.getElementById('dueModalNoDue');
+  const dueModalNoDueLabel = document.getElementById('dueModalNoDueLabel');
+  let editingTask = null;
 
   const hasDesktopAPI = typeof window.todoAPI !== 'undefined';
 
@@ -222,6 +250,11 @@
     optDueDesc.textContent = t('sort_due_desc');
     footerText.textContent = t('footer_copyright');
     if (langSelect) langSelect.value = currentLang;
+    // Modal i18n (keep buttons static for now)
+    if (dueModalTitle) dueModalTitle.textContent = t('edit_due');
+    if (dueModalLabel) dueModalLabel.textContent = t('prompt_edit_due');
+    if (noDueLabel) noDueLabel.textContent = t('no_due_option');
+    if (dueModalNoDueLabel) dueModalNoDueLabel.textContent = t('no_due_option');
   }
 
   function uid() {
@@ -244,6 +277,12 @@
     return Math.round(diff);
   }
 
+  function weeksLeft(days) {
+    if (days == null) return null;
+    if (days < 7) return null;
+    return Math.ceil(days / 7);
+  }
+
   function sortTasks(arr) {
     const mode = sortSelect.value;
     const copy = [...arr];
@@ -257,25 +296,34 @@
     return copy;
   }
 
+  function purgeExpiredClient(arr) {
+    const kept = arr.filter((t) => {
+      if (!t || !t.dueDate) return true;
+      const dl = daysLeft(t.dueDate);
+      return !(dl < 0 && !t.completed);
+    });
+    return kept;
+  }
+
   function render() {
     const showDone = showCompleted.checked;
     const sorted = sortTasks(tasks);
     listEl.innerHTML = '';
 
-    sorted.forEach((t) => {
-      if (!showDone && t.completed) return;
+    sorted.forEach((task) => {
+      if (!showDone && task.completed) return;
 
       const item = document.createElement('div');
       item.className = 'item';
 
       const left = document.createElement('div');
       const title = document.createElement('div');
-      title.className = 'item-title' + (t.completed ? ' completed' : '');
-      title.textContent = t.title;
+      title.className = 'item-title' + (task.completed ? ' completed' : '');
+      title.textContent = task.title;
 
       const meta = document.createElement('div');
       meta.className = 'item-meta';
-      const dl = daysLeft(t.dueDate);
+      const dl = daysLeft(task.dueDate);
       let badgeCls = 'neutral';
       let badgeText = '';
       if (dl === null) {
@@ -290,11 +338,14 @@
       } else if (dl <= 3) {
         badgeCls = 'warning';
         badgeText = t('days_left', { n: dl });
+      } else if (weeksLeft(dl)) {
+        badgeCls = 'neutral';
+        badgeText = t('weeks_left', { n: weeksLeft(dl) });
       } else {
         badgeCls = 'neutral';
         badgeText = t('days_left', { n: dl });
       }
-      meta.innerHTML = `<span class="badge ${badgeCls}">${badgeText}</span> · ${t('due_date_label', { date: fmtDate(t.dueDate) })}`;
+      meta.innerHTML = `<span class="badge ${badgeCls}">${badgeText}</span> · ${t('due_date_label', { date: fmtDate(task.dueDate) })}`;
 
       left.appendChild(title);
       left.appendChild(meta);
@@ -304,9 +355,9 @@
 
       const toggleBtn = document.createElement('button');
       toggleBtn.className = 'btn';
-      toggleBtn.textContent = t.completed ? t('mark_incomplete') : t('mark_complete');
+      toggleBtn.textContent = task.completed ? t('mark_incomplete') : t('mark_complete');
       toggleBtn.addEventListener('click', async () => {
-        t.completed = !t.completed;
+        task.completed = !task.completed;
         await storage.save(tasks);
         render();
       });
@@ -314,31 +365,15 @@
       const editDate = document.createElement('button');
       editDate.className = 'btn';
       editDate.textContent = t('edit_due');
-      editDate.addEventListener('click', async () => {
-        const preset = t.dueDate ? fmtDate(t.dueDate) : '';
-        const next = prompt(t('prompt_edit_due'), preset);
-        if (next === null) return;
-        const trimmed = next.trim();
-        if (!trimmed) {
-          t.dueDate = null;
-        } else {
-          const re = /^\d{4}-\d{2}-\d{2}$/;
-          if (!re.test(trimmed)) {
-            alert(t('alert_date_format'));
-            return;
-          }
-          const d = new Date(trimmed + 'T00:00:00');
-          if (!isNaN(d)) t.dueDate = d.toISOString();
-        }
-        await storage.save(tasks);
-        render();
+      editDate.addEventListener('click', () => {
+        openDueModal(task);
       });
 
       const delBtn = document.createElement('button');
       delBtn.className = 'btn';
       delBtn.textContent = t('delete');
       delBtn.addEventListener('click', async () => {
-        tasks = tasks.filter((x) => x.id !== t.id);
+        tasks = tasks.filter((x) => x.id !== task.id);
         await storage.save(tasks);
         render();
       });
@@ -355,15 +390,85 @@
     });
   }
 
+  function openDueModal(task) {
+    editingTask = task;
+    const preset = task && task.dueDate ? fmtDate(task.dueDate) : '';
+    if (dueModalInput) dueModalInput.value = preset;
+    if (dueModalNoDue) {
+      const isNoDue = !task || !task.dueDate;
+      dueModalNoDue.checked = isNoDue;
+      if (dueModalInput) dueModalInput.disabled = isNoDue;
+    }
+    if (dueModal) {
+      dueModal.style.display = 'flex';
+      dueModal.setAttribute('aria-hidden', 'false');
+    }
+  }
+
+  function closeDueModal() {
+    editingTask = null;
+    if (dueModalInput) dueModalInput.value = '';
+    if (dueModal) {
+      dueModal.style.display = 'none';
+      dueModal.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  if (dueModalCancel) {
+    dueModalCancel.addEventListener('click', () => closeDueModal());
+  }
+
+  if (dueModalConfirm) {
+    dueModalConfirm.addEventListener('click', async () => {
+      if (!editingTask) { closeDueModal(); return; }
+      const noDue = dueModalNoDue && dueModalNoDue.checked;
+      const next = (dueModalInput && dueModalInput.value) ? dueModalInput.value.trim() : '';
+      if (!next || noDue) {
+        editingTask.dueDate = null;
+      } else {
+        const re = /^\d{4}-\d{2}-\d{2}$/;
+        if (!re.test(next)) {
+          alert(t('alert_date_format'));
+          return;
+        }
+        const d = new Date(next + 'T00:00:00');
+        if (!isNaN(d)) editingTask.dueDate = d.toISOString();
+      }
+      await storage.save(tasks);
+      closeDueModal();
+      render();
+    });
+  }
+
+  if (dueModalNoDue) {
+    dueModalNoDue.addEventListener('change', () => {
+      const checked = dueModalNoDue.checked;
+      if (dueModalInput) {
+        dueModalInput.disabled = checked;
+        if (checked) dueModalInput.value = '';
+      }
+    });
+  }
+
+  if (noDueInput) {
+    noDueInput.addEventListener('change', () => {
+      const checked = noDueInput.checked;
+      dateInput.disabled = checked;
+      if (checked) dateInput.value = '';
+    });
+  }
+
   addBtn.addEventListener('click', async () => {
     const title = titleInput.value.trim();
     const date = dateInput.value;
     if (!title) return;
-    const dueISO = date ? new Date(date).toISOString() : null;
+    const dueISO = (!noDueInput || !noDueInput.checked) && date ? new Date(date).toISOString() : null;
     const task = { id: uid(), title, dueDate: dueISO, completed: false };
     tasks.unshift(task);
     titleInput.value = '';
     dateInput.value = '';
+    if (noDueInput) noDueInput.checked = false;
+    dateInput.disabled = false;
     await storage.save(tasks);
     render();
   });
@@ -382,6 +487,12 @@
 
   (async function init() {
     tasks = await storage.load();
+    // 若在瀏覽器預覽（localStorage）時，也執行客端逾期清理
+    const cleaned = purgeExpiredClient(tasks);
+    if (cleaned.length !== tasks.length) {
+      tasks = cleaned;
+      await storage.save(tasks);
+    }
     applyI18n();
     render();
   })();

@@ -25,6 +25,10 @@
       <section class="form">
         <input id="titleInput" type="text" placeholder="輸入待辦事項..." />
         <input id="dateInput" type="date" />
+        <label class="checkbox" style="align-self:center;">
+          <input id="noDueInput" type="checkbox" />
+          <span id="noDueLabel">不限期</span>
+        </label>
         <button id="addBtn" class="primary">加入</button>
       </section>
 
@@ -44,6 +48,27 @@
       <footer class="footer">
         <span id="footerText">© 2025 版權所有</span>
       </footer>
+    </div>
+
+    <!-- Edit Due Date Modal -->
+    <div id="dueModal" class="modal-backdrop" style="display:none;" aria-hidden="true">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="dueModalTitle">修改到期日</h2>
+        </div>
+        <div class="modal-body">
+          <label for="dueModalInput" id="dueModalLabel">到期日（YYYY-MM-DD）：</label>
+          <input id="dueModalInput" type="date" />
+          <label class="checkbox" style="margin-top:4px;">
+            <input id="dueModalNoDue" type="checkbox" />
+            <span id="dueModalNoDueLabel">不限期</span>
+          </label>
+        </div>
+        <div class="modal-footer">
+          <button id="dueModalCancel" class="btn">取消</button>
+          <button id="dueModalConfirm" class="primary">確定</button>
+        </div>
+      </div>
     </div>
 
     <script src="renderer.js"></script>

@@ -15,8 +15,14 @@ if (!(Test-Path $OutputDir)) {
 $shortcutPath = Join-Path $OutputDir $ShortcutName
 $w = New-Object -ComObject WScript.Shell
 $sc = $w.CreateShortcut($shortcutPath)
-$sc.TargetPath = (Get-Command npm.cmd).Source
-$sc.Arguments = 'run start'
+$ps1 = Join-Path $AppDir 'start_app.ps1'
+if (Test-Path $ps1) {
+  $sc.TargetPath = (Get-Command powershell).Source
+  $sc.Arguments = "-NoLogo -NoProfile -ExecutionPolicy Bypass -File `"$ps1`""
+} else {
+  $sc.TargetPath = (Join-Path $AppDir 'start_app.cmd')
+  $sc.Arguments = ''
+}
 $sc.WorkingDirectory = $AppDir
 $sc.WindowStyle = 1
 if ($Description) { $sc.Description = $Description }

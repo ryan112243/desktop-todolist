@@ -20,6 +20,38 @@ function ensureTasksFile() {
   }
 }
 
+function daysLeft(iso) {
+  if (!iso) return null;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const due = new Date(iso);
+  due.setHours(0, 0, 0, 0);
+  const diff = (due - today) / (1000 * 60 * 60 * 24);
+  return Math.round(diff);
+}
+
+function purgeExpiredTasks() {
+  try {
+    const raw = fs.readFileSync(TASKS_FILE, 'utf-8');
+    const tasks = JSON.parse(raw);
+    if (!Array.isArray(tasks)) return [];
+    const kept = tasks.filter((t) => {
+      if (!t || !t.dueDate) return true;
+      const dl = daysLeft(t.dueDate);
+      // 僅刪除逾期且未完成的項目
+      if (dl < 0 && !t.completed) return false;
+      return true;
+    });
+    if (kept.length !== tasks.length) {
+      fs.writeFileSync(TASKS_FILE, JSON.stringify(kept, null, 2), 'utf-8');
+    }
+    return kept;
+  } catch (err) {
+    console.error('purgeExpiredTasks error:', err);
+    return null;
+  }
+}
+
 function createWindow() {
   // 設定預設尺寸與位置（右上角貼邊）
   const display = screen.getPrimaryDisplay();
@@ -90,6 +122,8 @@ app.whenReady().then(() => {
   // Windows 通知需要 AppUserModelID
   try { app.setAppUserModelId('桌面todolist'); } catch (e) {}
   ensureTasksFile();
+  // 啟動時先清理逾期未完成項目
+  try { purgeExpiredTasks(); } catch (e) {}
   createWindow();
   createTray();
   // 設定開機自動啟動
@@ -119,7 +153,17 @@ ipcMain.handle('loadTasks', async () => {
     ensureTasksFile();
     const raw = fs.readFileSync(TASKS_FILE, 'utf-8');
     const data = JSON.parse(raw);
-    return Array.isArray(data) ? data : [];
+    const arr = Array.isArray(data) ? data : [];
+    // 讀取時自動清理逾期未完成項目
+    const kept = arr.filter((t) => {
+      if (!t || !t.dueDate) return true;
+      const dl = daysLeft(t.dueDate);
+      return !(dl < 0 && !t.completed);
+    });
+    if (kept.length !== arr.length) {
+      try { fs.writeFileSync(TASKS_FILE, JSON.stringify(kept, null, 2), 'utf-8'); } catch (e) {}
+    }
+    return kept;
   } catch (err) {
     console.error('loadTasks error:', err);
     return [];
@@ -135,16 +179,6 @@ ipcMain.handle('saveTasks', async (_event, tasks) => {
     return { ok: false, error: String(err) };
   }
 });
-
-function daysLeft(iso) {
-  if (!iso) return null;
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const due = new Date(iso);
-  due.setHours(0, 0, 0, 0);
-  const diff = (due - today) / (1000 * 60 * 60 * 24);
-  return Math.round(diff);
-}
 
 function notify(title, body) {
   try {
